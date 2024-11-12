@@ -1,0 +1,199 @@
+/* Estilos del encabezado */
+.header-container {
+    background-color: #D3A783; /* Marrón pastel */
+    color: white;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.header-container .logo a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a {
+    color: white;
+    margin: 0 0.5em;
+    text-decoration: none;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.header-icons span {
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.user-icon {
+    position: relative;
+}
+
+.user-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0.5em 1em;
+    text-align: center;
+    border-radius: 4px;
+    z-index: 1000;
+}
+
+.user-icon:hover .user-menu {
+    display: block;
+}
+
+.user-menu a {
+    display: block;
+    padding: 0.5em 0;
+    color: #333;
+    text-decoration: none;
+}
+
+.user-menu a:hover {
+    color: #d9534f;
+}
+
+/* Estilo del cuadro de registro */
+.register-container {
+    max-width: 600px;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.register-container h1 {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+    color: #333;
+}
+
+.login-tabs {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1em;
+}
+
+.login-tabs button {
+    background: none;
+    border: none;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    cursor: pointer;
+    color: #333;
+}
+
+.login-tabs .active {
+    border-bottom: 2px solid #d9534f;
+    font-weight: bold;
+    color: #d9534f;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    text-align: left;
+}
+
+.register-form h2 {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.input-group {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.input-group input[type="text"],
+.input-group input[type="email"],
+.input-group input[type="password"],
+.input-group input[type="number"] {
+    width: calc(50% - 1em);
+    padding: 0.6em;
+    font-size: 0.9em;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    outline: none;
+}
+
+.input-group input::placeholder {
+    color: #aaa;
+}
+
+/* Tamaños específicos para DNI y Teléfono */
+.small-input {
+    width: calc(33% - 1em);
+}
+
+.medium-input {
+    width: calc(67% - 1em);
+}
+
+.terms,
+.notifications {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.terms label {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.terms a {
+    color: #d9534f;
+    text-decoration: none;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+.notifications p {
+    margin: 0;
+    margin-bottom: 0.5em;
+}
+
+.notifications label {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+/* Botón de registro */
+.register-button {
+    padding: 0.8em;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 1em;
+    font-weight: bold;
+}
